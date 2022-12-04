@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import './Style.css'
 
 const Product = ({ product }) => {
   return (
@@ -8,7 +9,7 @@ const Product = ({ product }) => {
         <Card.Img src={product.image} variant='top' />
       </a>
       <Card.Body>
-        <a href={`/product/${product._id}`}>
+        <a className='product_title' href={`/product/${product._id}`}>
           <Card.Title as='div'>
             {' '}
             <strong>{product.name}</strong>{' '}
@@ -16,7 +17,7 @@ const Product = ({ product }) => {
         </a>
         <Card.Text as='div'>
           <div className='my-3'>
-            {product.rating} from (product.numReviews) reviews
+            {product.rating} from {product.numReviews} reviews
           </div>
         </Card.Text>
         <Card.Text as='h3'>${product.price}</Card.Text>
