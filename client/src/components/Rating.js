@@ -1,9 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import './Style.css'
 
 const Rating = ({ value, text }) => {
   return (
     <div className='rating'>
-      <span>
+      <span className='first-star'>
         <i
           className={
             value >= 1
@@ -61,6 +63,11 @@ const Rating = ({ value, text }) => {
       <span>{text && text}</span>
     </div>
   )
+}
+
+Rating.propTypes = {
+  value: PropTypes.number.isRequired,
+  text: PropTypes.string.isRequired,
 }
 
 export default Rating

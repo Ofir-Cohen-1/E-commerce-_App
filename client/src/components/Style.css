@@ -4,3 +4,6 @@
 .product_title :hover {
   text-decoration: underline;
 }
+i {
+  color: #f8e825;
+}
