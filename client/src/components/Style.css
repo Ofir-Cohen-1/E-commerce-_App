@@ -1,9 +1,16 @@
+.link {
+  text-decoration: none;
+}
 .product_title {
   text-decoration: none;
 }
 .product_title :hover {
   text-decoration: underline;
 }
-i {
+.star {
   color: #f8e825;
+}
+
+Link {
+  text-decoration: none;
 }
