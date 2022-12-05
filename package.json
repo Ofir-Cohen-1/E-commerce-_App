@@ -1,0 +1,22 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/Server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ofir-Cohen-1/E-commerce-_App.git"
+  },
+  "author": "Ofir Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ofir-Cohen-1/E-commerce-_App/issues"
+  },
+  "homepage": "https://github.com/Ofir-Cohen-1/E-commerce-_App#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
