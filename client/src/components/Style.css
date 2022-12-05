@@ -1,3 +1,6 @@
 .product_title {
   text-decoration: none;
 }
+.product_title :hover {
+  text-decoration: underline;
+}
