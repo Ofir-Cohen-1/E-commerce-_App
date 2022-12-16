@@ -1,4 +1,3 @@
-// import React from 'react'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import colors from 'colors'
@@ -31,10 +30,10 @@ const importData = async () => {
     await Product.insertMany(sampleProducts)
 
     console.log('Data Imported!'.green.inverse)
-    procces.exit()
+    process.exit()
   } catch (error) {
-    console.error(`${error}.red.inverse`)
-    procces.exit(1)
+    console.error(`${error}`.red.inverse)
+    process.exit(1)
   }
 }
 
@@ -46,14 +45,14 @@ const destroyData = async () => {
     await User.insertMany(users)
 
     console.log('Data Destroyed!'.red.inverse)
-    procces.exit()
+    process.exit()
   } catch (error) {
-    console.error(`${error}.red.inverse`)
-    procces.exit(1)
+    console.error(`${error}`.red.inverse)
+    process.exit(1)
   }
 }
 
-if (procces.argv[2] === '-d') {
+if (process.argv[2] === '-d') {
   destroyData()
 } else {
   importData()
