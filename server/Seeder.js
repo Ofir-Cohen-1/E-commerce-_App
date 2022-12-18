@@ -4,9 +4,9 @@ import colors from 'colors'
 import users from './data/Users.js'
 import products from './data/Products.js'
 import User from './models/UserModel.js'
-import Product from './models/UserModel.js'
+import Product from './models/ProductModel.js'
 import Order from './models/OrderModel.js'
-import connectDB from './config/Db.js'
+import connectDB from './config/db.js'
 
 dotenv.config()
 
